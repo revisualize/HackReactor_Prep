@@ -12,3 +12,6 @@ function countCharacter(str, char) {
 }
 var output = countCharacter('aaaa', '');
 console.log(output); 
+
+var output = countCharacter('I am a hacker', 'a');
+console.log(output); // --> 3
