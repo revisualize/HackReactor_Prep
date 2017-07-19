@@ -15,3 +15,13 @@ console.log(output);
 
 var output = countCharacter('I am a hacker', 'a');
 console.log(output); // --> 3
+
+The above function worked, but didn't pass the all the tests. The below one works and passes all the tests.
+
+function countCharacter(str, char) {
+  // your code here
+for (var i = 0, count=0; i<str.length; count+=+(char===str[i++]));
+return count;
+}
+
+countCharacter("I am a hacker", "a");
